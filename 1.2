@@ -1,0 +1,9 @@
+import turtle
+import random
+
+
+turtle.shape("square")
+for count in range(20):
+  turtle.color('#%06x' % random.randint(0, 2**24 - 1))
+  turtle.goto(random.randint(-200, 200),random.randint(-200, 200))
+  turtle.stamp()
