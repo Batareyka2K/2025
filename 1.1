@@ -1,0 +1,25 @@
+def text_prompt(msg):
+  try:
+    return raw_input(msg)
+  except NameError:
+    return input(msg)
+
+
+Limbs = float(text_prompt('Сколько конечностей?'))
+if Limbs == 2:
+  print('Это птица!')
+elif Limbs > 10:
+  print('Это же многоножка!')
+elif Limbs == 10:
+  print('Это краб!')
+elif Limbs == 1:
+  print('Это  моллюск!')
+elif Limbs == 4:
+  print('Это млекопитающее!')/** end e
+  #pd#K{Ibs)mB5$9:z **/
+elif Limbs == 6:
+  print('Это Жук!')
+elif Limbs == 8:
+  print('Это паук!')
+elif Limbs == 0:
+  print('Это червяк!')
