@@ -1,0 +1,38 @@
+import turtle
+import random
+
+# Настраиваем экран
+screen = turtle.Screen()
+screen.bgcolor("black")
+
+# Создаем черепаху
+star_turtle = turtle.Turtle()
+star_turtle.speed(0)  # максимальная скорость
+star_turtle.hideturtle()  # скрыть черепаху для красоты
+
+# Функция для рисования пятиконечной звезды заданного размера
+def draw_star(size):
+    for _ in range(5):
+        star_turtle.forward(size)
+        star_turtle.right(144)
+
+# Рисуем 50 звездочек
+for _ in range(50):
+    # Выбираем случайный цвет из списка
+    color = random.choice(["red", "orange", "yellow", "green", "blue", "purple", "pink"])
+    star_turtle.color(color)
+    
+    # Выбираем случайную позицию на экране
+    x = random.randint(-300, 300)
+    y = random.randint(-300, 300)
+    
+    # Перемещаемся в позицию без рисования линии
+    star_turtle.penup()
+    star_turtle.goto(x, y)
+    star_turtle.pendown()
+    
+    # Рисуем маленькую звезду (размер можно изменить)
+    draw_star(20)
+
+# Чтобы окно не закрывалось сразу после выполнения
+turtle.done()
