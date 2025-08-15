@@ -1,0 +1,16 @@
+import turtle
+
+
+turtle.shape("triangle")
+turtle.color('#ff6600')
+turtle.forward(45)
+turtle.right(60)
+turtle.forward(45)
+turtle.right(60)
+turtle.forward(45)
+turtle.right(60)
+turtle.forward(45)
+turtle.right(60)
+turtle.forward(45)
+turtle.right(60)
+turtle.forward(45)
