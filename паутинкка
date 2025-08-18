@@ -1,0 +1,11 @@
+import turtle as t
+t.speed(6)
+t.color('red')
+t.width(3)
+t.ht()
+for i in range(5, 60):
+    t.fd(i)
+    t.pu()
+    t.fd(i)
+    t.pd()
+    t.lt(150)
