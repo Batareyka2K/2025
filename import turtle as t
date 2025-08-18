@@ -2,7 +2,7 @@ import turtle as t
 t.color('#0000ff')
 t.pensize(3)
 t.hideturtle()
-t.speed(0)
+t.speed(3)
 for i in range (5, 200, 5):
     t.forward(i)
     t.right(360/9*4)
