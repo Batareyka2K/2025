@@ -1,0 +1,13 @@
+from turtle import *
+x=[]
+y=[]
+for i in range(3):
+  new_x=int(input('введите х'))
+  new_y=int(input('введите у'))
+  x.append(new_x)
+  y.append(new_y)
+for i in range(3):
+  pu()
+  goto(x[i], y[i])
+  pd()
+  circle(20)
