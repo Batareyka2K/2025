@@ -1,0 +1,25 @@
+from turtle import *
+
+w = Screen()
+
+def forward():
+    fd(10)
+
+def backward():
+    bk(10)
+
+def turn_left():
+    lt(10)
+
+def turn_right():
+    rt(10)
+penup()
+speed(0)
+shape('turtle')
+w.listen()
+w.onkey(forward, "Up")
+w.onkey(backward, "Down")
+w.onkey(turn_left, "Left")
+w.onkey(turn_right, "Right")
+
+mainloop()
