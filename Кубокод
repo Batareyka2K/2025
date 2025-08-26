@@ -1,0 +1,59 @@
+import turtle
+import random
+
+"""Дэф квадратоподобного и его всемогущих глобальномогущих переменных
+"""
+def cuboid(side):
+  global x, y
+  Square(side)
+  Trapeze1(side)
+  Trapeze2(side)
+
+"""Дэф Квадрата...
+"""
+def Square(side):
+  global x, y
+  turtle.color('#ff99ff')
+  turtle.begin_fill()
+  for count2 in range(4):
+    turtle.forward(side)
+    turtle.right(90)
+  turtle.end_fill()
+
+"""Дэф второй Трапеции...
+"""
+def Trapeze2(side):
+  global x, y
+  turtle.color('#6600cc')
+  turtle.begin_fill()
+  turtle.left(30)
+  turtle.forward(side)
+  turtle.right(120)
+  turtle.forward(side)
+  turtle.right(60)
+  turtle.forward(side)
+  turtle.right(210)
+  turtle.end_fill()
+
+"""Деф первой трапеции...
+"""
+def Trapeze1(side):
+  global x, y
+  turtle.color('#993399')
+  turtle.begin_fill()
+  turtle.forward(side)
+  for count3 in range(2):
+    turtle.left(30)
+    turtle.forward(side)
+    turtle.left(150)
+    turtle.forward(side)
+  turtle.end_fill()
+
+
+for count in range(10):
+  turtle.penup()
+  x = random.randint(-200, 150)
+  y = random.randint(-200, 150)
+  turtle.goto(x,y)
+  turtle.pendown()
+  cuboid(40)
