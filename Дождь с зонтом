@@ -1,0 +1,9 @@
+is_raining = True
+have_umbrella = False
+
+if is_raining and have_umbrella:
+    print("Идём гулять, дождь не страшен!")
+elif is_raining and not have_umbrella:
+    print("Лучше остаться дома — без зонта промокнем.")
+else:
+    print("Можно гулять без проблем.")
