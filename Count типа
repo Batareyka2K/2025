@@ -1,0 +1,5 @@
+    string = "Я типа пошёл типа вчера гулять типа вот типа ага."
+    print(string.count("типа"))
+
+    string = "aaa_"
+    print(string.endswith("_"))
