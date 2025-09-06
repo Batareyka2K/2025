@@ -1,0 +1,15 @@
+ >>> "_name".startswith("_")#Поиск искомого стартового символа
+    True
+
+
+    name = "internal_attr_2"
+    if not name.startswith("_"):
+        print(name)
+
+  word = "мышь"
+
+    if word.endswith("ь"):#Поиск подходящего окончания
+    print("Это существительное женского рода:", word)
+
+    >>> "абракадабра".count("а")#подсчет нужных символов
+    5
