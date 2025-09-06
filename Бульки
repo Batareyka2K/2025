@@ -1,0 +1,14 @@
+  >>> "abcde".islower()
+    True
+
+ >>> "ABC".isupper()
+    True
+
+ >>> "Незнайка".istitle()
+    True
+
+  >>> "12345".isnumeric()
+    True
+
+>>> "абвгдсCDEF".isalpha()
+    True
