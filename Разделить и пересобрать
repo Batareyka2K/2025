@@ -1,0 +1,11 @@
+report = "Тест пройден успешно"
+words = report.split()  # по пробелам
+
+print(words)
+# ['Тест', 'пройден', 'успешно']
+
+print(len(words))  # сколько слов в отчёте
+# 3
+
+new_report = "-".join(words)  # соединяем через дефис
+print(new_report)
