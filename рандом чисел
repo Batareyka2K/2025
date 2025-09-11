@@ -1,0 +1,11 @@
+    import random
+        
+        number = random.randint(1,10)
+ 
+        guess = int(input('Введите число: '))
+
+        if guess == number: 
+            print('Поздравляю, вы угадали!')
+        else:
+            print(f'Вы не угадали, загаданные число {number}')
+        
